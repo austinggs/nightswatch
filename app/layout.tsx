@@ -24,6 +24,7 @@ export default async function RootLayout({
     <html lang="en">
       <body className="font-sans antialiased">
         <SupabaseProvider>
+          <CapacitorInit />
           <div className="flex min-h-screen flex-col">
             <Navbar clanName={clanName} clanLogo={settings?.clan_logo || null} />
             <main className="flex-1 pb-16">{children}</main>
