@@ -4,6 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { SupabaseProvider } from "@/components/providers/SupabaseProvider";
 import { getSettings } from "@/lib/queries";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Night's Watch — Blood Strike Clan Hub",
@@ -29,6 +30,7 @@ export default async function RootLayout({
             <Footer settings={settings} clanName={clanName} />
           </div>
         </SupabaseProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
