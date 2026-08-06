@@ -4,6 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { SupabaseProvider } from "@/components/providers/SupabaseProvider";
 import { getSettings } from "@/lib/queries";
+import CapacitorInit from "@/components/CapacitorInit";
 
 export const metadata: Metadata = {
   title: "Night's Watch — Blood Strike Clan Hub",
